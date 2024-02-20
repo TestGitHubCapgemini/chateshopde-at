@@ -4,7 +4,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Prueba superchat</title>
+  <title>Hotfix Store BE AP</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     /* Estilos personalizados */
@@ -52,7 +52,7 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Tech News</a>
+    <a class="navbar-brand" href="#">Hotfix Store BE AP</a>
   </nav>
   
   <div class="container">
@@ -238,7 +238,6 @@
               false
           );
       </script>
-<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #0074E8;
@@ -249,7 +248,7 @@
 	}
 </style>
 
-
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
@@ -274,10 +273,10 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://psa-customerfirst--preprod.sandbox.my.salesforce.com',
-			'https://psa-customerfirst--preprod.sandbox.my.site.com/peugeot',
+			'https://psa-customerfirst--hotfix.sandbox.my.salesforce.com',
+			'https://psa-customerfirst--hotfix.sandbox.my.site.com/peugeot',
 			gslbBaseURL,
-			'00D1x000000KYSu',
+			'00D1x000000KYS3',
 			'Chat_Store_be_ap',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
@@ -292,7 +291,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://psa-customerfirst--preprod.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://psa-customerfirst--hotfix.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};

@@ -4,7 +4,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Hotfix Store BE AP</title>
+  <title>Preprod Store BE AP</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     /* Estilos personalizados */
@@ -52,7 +52,7 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Hotfix Store BE AP</a>
+    <a class="navbar-brand" href="#">Preprod Store BE AP</a>
   </nav>
   
   <div class="container">
@@ -273,10 +273,10 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://psa-customerfirst--hotfix.sandbox.my.salesforce.com',
-			'https://psa-customerfirst--hotfix.sandbox.my.site.com/peugeot',
+			'https://psa-customerfirst--preprod.sandbox.my.salesforce.com',
+			'https://psa-customerfirst--preprod.sandbox.my.site.com/peugeot',
 			gslbBaseURL,
-			'00D1x000000KYS3',
+			'00D1x000000KYSu',
 			'Chat_Store_be_ap',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
@@ -291,7 +291,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://psa-customerfirst--hotfix.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://psa-customerfirst--preprod.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};

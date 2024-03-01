@@ -218,36 +218,6 @@
       </div>
     </div>
   </div>
-<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
-	}
-</style>
-<!-- Embedded Service <-> LWC Wrapper -->
-      <script>
-          window.addEventListener("message", function(event) {
-              var payload = event.data;
-              if (payload && payload.type === "chasitor.sendMessage") {
-                  embedded_svc.postMessage("chasitor.sendMessage", payload.message);
-              }
-          },
-              false
-          );
-      </script>
-<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #CD131E;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #CD131E;
-	}
-</style>
-
 <script type='text/javascript' src='https://service.force.com/embeddedservice/menu/fab.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
